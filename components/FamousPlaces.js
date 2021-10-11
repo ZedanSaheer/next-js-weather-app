@@ -12,7 +12,7 @@ const places = [
         url: "/location/riyadh-108410"
     },
     {
-        name : "dammam",
+        name: "dammam ❤️",
         image : dammam,
         url: "/location/dammam-110336"
     },
@@ -24,11 +24,11 @@ const places = [
     {
         name : "khobar",
         image : khobar,
-        url : "/location/"
+        url: "/location/khobar-109323"
     },
 ]
 
-const FamousPlaces = () => {
+const FamousPlaces = ({dark}) => {
     return (
         <div className="famous">
             <div className="place">
@@ -38,7 +38,7 @@ const FamousPlaces = () => {
                             <Link href={place.url}>
                                <div className="place__image-wrapper">
                                    <Image src={place.image} alt={place.name} width="300" height="160" objectFit="cover"/>
-                                   <span>{place.name}</span>
+                                    <span className={dark && `light-text` }>{place.name}</span>
                                </div> 
                             </Link>                 
                         </div>

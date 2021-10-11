@@ -7,6 +7,7 @@
     font-family: "poppins", sans-serif;
 }
 
+
 .toggle {
     width: 55px;
     border-radius: 33px;
@@ -54,8 +55,15 @@
     }
     
 }
-    .container {
-        position: relative;
+.title{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.container {
+    position: relative;
         max-width: 800px;
     margin: 0 auto;
     display: flex;
@@ -85,9 +93,9 @@
     flex-direction: column;
     justify-content: flex-start;
     h1 {
+        flex: 1;
         text-transform: uppercase;
         color: white;
-        margin-bottom: 6rem;
         text-align: center;
         font-size: 1.5rem;
     }
@@ -97,6 +105,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0 2rem;
     height: 100%;
     &__back {
         color: white;
