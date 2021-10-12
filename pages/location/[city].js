@@ -2,7 +2,6 @@ import React ,{useState} from 'react'
 import cities from "../../lib/city.list.json"
 import Head from "next/head"
 import TodaysWeather from '../../components/TodaysWeather'
-import moment from 'moment'
 import moment from 'moment-timezone'
 import HourlyWeather from '../../components/HourlyWeather'
 import WeeklyWeather from '../../components/WeeklyWeather'
