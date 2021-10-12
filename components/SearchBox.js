@@ -63,8 +63,8 @@ const SearchBox = ({ back , dark , setDark }) => {
                     <ul>
                         {results.length > 0 ?
                             (results.map((result) =>
-                            (<Link href={`/location/${result.slug}`}>
-                                <li key={result.slug} onClick={clearList}>
+                            (<Link href={`/location/${result.slug}`} key={result.slug}>
+                                <li onClick={clearList}>
                                     <a>
                                         {result.name}
                                         {result.state && `,${result.state}`}

@@ -65,7 +65,7 @@ const City = ({ city, hourlyWeather, dailyWeather, timezone }) =>
     return (
         <div className="city">
             <Head>
-                <title>{city.name}'s Forecast</title>
+                <title>{city.name}&apos;s Forecast</title>
             </Head>
             <div className="page-wrapper">
                 <div className={dark ? `container light-bg` : `container`}>

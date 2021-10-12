@@ -13,7 +13,7 @@ export default function Home() {
       <div className={dark ? `container light-bg` : `container`}>
         <div className="home">
           <div className="title">
-            <h1 className={dark && `light-text`}>Zedan's Weather Application</h1>
+            <h1 className={dark && `light-text`}>Zedan&apos;s Weather Application</h1>
             <div className={dark ? `toggle active` : `toggle`} onClick={() => setDark(value => !value)}>
               <div className={dark ? `switch active` : `switch`}>{dark ? "🌙" : "🌕"}</div>
             </div>
