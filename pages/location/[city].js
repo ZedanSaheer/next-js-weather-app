@@ -49,7 +49,7 @@ export const getServerSideProps = async (context) => {
     }
 
     const getHourlyData = (hourlyData, timezone) => {
-        /* const endOfDay = moment().tz(timezone).endOf("day").valueOf(); */
+        const endOfDay = moment().tz(timezone).valueOf();
         const endTimeStamp = Math.floor(endOfDay / 1000);
         const todayData = hourlyData.filter((data) => data.dt < endTimeStamp);
         return todayData;
